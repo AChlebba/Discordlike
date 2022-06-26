@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Discordlike</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
     </head>
 
 <body>
@@ -17,7 +19,7 @@
             {% endfor %}
         </ul>
     {% endif %}
-
+    
     {% block content %}
 
     {% endblock %}
